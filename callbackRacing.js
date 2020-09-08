@@ -1,8 +1,8 @@
 let cb_creator = (delay) => (cb) => setTimeout(cb, delay);
 
-let cb_1 = cb_creator(Math.random(1000));
+let cb_1 = cb_creator(Math.random() * 1000);
 
-let cb_2 = cb_creator(Math.random(1000));
+let cb_2 = cb_creator(Math.random() * 1000);
 
 let end_cb = () => console.log("done");
 
