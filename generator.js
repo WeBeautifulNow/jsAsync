@@ -42,7 +42,10 @@ function dinner() {
         let result = execuator.next();
 
         // while (!result.done) {
-        //     result.value.then((value) => resolveHandle(value));
+        //     result.value.then((value) => {
+        //         resolveHandle(value);
+        //         result = result.next();
+        //     });
         // }
         if (result.done) {
             return;
